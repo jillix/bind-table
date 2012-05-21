@@ -1,4 +1,4 @@
-define(["./list"], function(List) {
+define(["adioo/bind/repeater"], function(Repeater) {
     
     var Table = {
         
@@ -21,7 +21,7 @@ define(["./list"], function(List) {
     
     return function(config) {
         
-        var table = List(config);
+        var table = Repeater(config);
         
         return table;
     };
